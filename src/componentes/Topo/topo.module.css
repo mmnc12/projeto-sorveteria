@@ -34,7 +34,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 475px) {
   .container_topo {
     flex-direction: column;
     align-items: flex-start;
