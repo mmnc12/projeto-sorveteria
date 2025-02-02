@@ -1,0 +1,90 @@
+.container_sobre {
+
+  & .titulo_fundo {
+    display: flex;
+    background-image: url(../../../public/banner-sobre.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    & h1 {
+      color: #ffffff;
+      font-size: 6.25rem;
+      text-align: center;
+
+      text-shadow: 3px 5px 2px #474747;
+    }
+
+  }
+
+  & .texto_imagem {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & .texto {
+      max-width: 1024px;
+      width: 100%;
+      display: flex;
+      padding: 100px 20px;
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+
+      & h3 {
+        font-size: 32px;
+      }
+
+      & span {
+        font-size: 20px;
+      }
+
+      & p {
+        font-size: 16px;
+      }
+    }
+
+    & .imagem {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      & .img {
+        width: 50%;
+        height: auto;
+        flex: 1 1 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .texto {
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .imagem {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100% !important; 
+  }
+
+  .titulo_fundo h1 {
+    font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .titulo_fundo h1 {
+    font-size: 3rem !important;
+  }
+}
