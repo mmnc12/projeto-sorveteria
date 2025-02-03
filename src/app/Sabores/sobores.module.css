@@ -80,18 +80,26 @@
 }
 
 
-@media (max-width: 376px) {
+@media (max-width: 768px) {
   .cards {
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
   .card {
-    max-width: 100% !important;
+    width: 100% !important;
+    max-width: 90%;
   }
 
   .fundo_titulo h1 {
     font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100% !important;
   }
 }
